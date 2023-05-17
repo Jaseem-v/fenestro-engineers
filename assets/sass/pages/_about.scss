@@ -1,0 +1,251 @@
+.about {
+    &__swiper {
+        // margin-top: 8rem;
+
+
+        .swiper-container {
+            // height: 250px;
+            position: relative;
+
+
+            .swiper-slide {
+                border-radius: 5px;
+
+
+                img {
+                    // height: 100%;
+                    // width: 100%;
+                }
+
+            }
+
+
+
+            .pagination {
+                margin-left: 8px !important;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                margin-top: 40px;
+                z-index: 100;
+
+                span {
+                    font-size: 0;
+                    opacity: 1;
+                    margin: 0px 6px !important;
+                    border: 1px solid #fff;
+
+                    &.swiper-pagination-bullet-active {
+                        background-color: transparent;
+                        transform: scale(1.5);
+                    }
+                }
+            }
+        }
+
+        &-prev,
+        &-next {
+            cursor: pointer;
+            z-index: 100;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            opacity: 0.65;
+            transition: 0.2s;
+
+            &:hover {
+                opacity: 1;
+            }
+
+            svg {
+                width: 20px;
+                height: 20px;
+            }
+
+            svg path {
+                fill: #fff;
+            }
+        }
+
+        &-prev {
+            left: 25px;
+        }
+
+        &-next {
+            right: 25px;
+        }
+    }
+
+
+
+    &__mv {
+        &-single {
+            padding: 4rem;
+            border: 2px solid #141414;
+        }
+
+        &-img {
+            width: 10rem;
+            margin-bottom: 2.5rem;
+        }
+    }
+}
+
+
+
+
+////////////////////////////////
+/// sdp
+///////////////////////////////////
+/// sdp
+
+.sdp {
+
+
+    .ImageWrapper {
+        width: 100%;
+        height: 50rem;
+        background-color: #fff;
+        border-radius: .5rem;
+        padding: .5rem;
+        overflow: hidden;
+
+        .AnimatedImage {
+            width: 100%;
+            height: 100%;
+            transform: scale(1);
+            background: transparent no-repeat center;
+            background-size: contain;
+            transition: transform .25s cubic-bezier(0.075, 0.82, 0.165, 1);
+            /// default origin is in center
+            transform-origin: 50% 50%;
+            pointer-events: none;
+        }
+
+        &:hover {
+            cursor: crosshair;
+
+            .AnimatedImage {
+                transform: scale(2);
+            }
+        }
+    }
+
+    &__content {
+        display: flex;
+        height: 100%;
+        padding: 4rem;
+        flex-direction: column;
+        gap: 2rem;
+        align-items: flex-start;
+    }
+
+    &__title {
+        font-size: 3.5rem;
+    }
+
+    &__price {
+        color: $color-primary;
+        font-weight: 700;
+        font-size: 3rem;
+    }
+
+    &__description {
+        font-size: 1.5rem;
+        // line-height: ;
+    }
+
+    &__label {
+        font-size: 1.5rem;
+        font-weight: 600;
+        margin-bottom: 1rem;
+    }
+
+    &__select {
+
+
+
+        .select {
+            position: relative;
+            display: flex;
+            // width: 80%;
+            // height: 3rem;
+            border-radius: .25em;
+            // overflow: hidden;
+            flex-direction: column;
+            gap: 2rem;
+
+
+
+            option {
+                display: block;
+                font-size: 1.5rem;
+            }
+
+
+        }
+    }
+
+    &__btn {
+        width: 50%;
+        margin-top: 5rem;
+    }
+
+    &__table {
+        padding: 2rem;
+        border: 1px solid #EDECEA;
+
+        th,
+        td {
+            border: 1px solid #EDECEA;
+            padding: 1.5rem 2rem;
+            font-size: 1.5rem;
+            white-space: nowrap;
+        }
+
+        td {
+            width: 100%;
+        }
+
+        th {
+            width: max-content;
+            font-weight: 500;
+
+        }
+    }
+
+
+}
+
+
+
+
+//////////////////////////////////
+/// .booking-form
+/// 
+
+.booking {
+    .section-heading {
+        width: 50%;
+    }
+
+    &__form {
+        margin-top: 5rem;
+    }
+
+    &__input,
+    textarea {
+        width: 100%;
+        padding: 1rem 2rem;
+        border: 1px solid #363535;
+        font-size: 1.5rem;
+        color: #363535;
+        margin-bottom: 2rem;
+        background: transparent;
+    }
+
+    &__btn{
+        padding: 1rem 3rem;
+    }
+
+}
