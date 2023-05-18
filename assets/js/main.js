@@ -237,3 +237,13 @@ var swiper4 = new Swiper(".img-display-swiper", {
     },
 });
 
+
+
+// function thmSwiperInit() {
+// swiper slider
+// const swiperElm = document.querySelectorAll(".thm-swiper__slider");
+// swiperElm.forEach(function (swiperelm) {
+//     const swiperOptions = JSON.parse(swiperelm.dataset.swiperOptions);
+//     let thmSwiperSlider = new Swiper(swiperelm, swiperOptions);
+// });
+// }

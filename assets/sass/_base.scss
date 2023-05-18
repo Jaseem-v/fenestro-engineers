@@ -56,7 +56,7 @@ h6 {
 
 
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: 400;
   background: #fff;
   color: $color-secondary;
@@ -451,7 +451,7 @@ html {
 }
 
 .bg-f6f5ed {
-  background: #f6f5ed !important;
+  background: #F5F6F7 !important;
 }
 
 .breadcrmb {
@@ -466,3 +466,219 @@ html {
   padding: 12rem 0;
 
 }
+
+
+//////////////////////////////
+/// pager
+
+.pager-section {
+  background: url(https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/bg-hero.jpg) #f2f7fd;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  padding: 75px 0 85px;
+  position: relative;
+
+  .pager-content {
+    position: relative;
+    z-index: 99;
+
+    h2 {
+      color: #2b2b2b;
+      font-size: 65px;
+      text-transform: capitalize;
+      font-weight: 400;
+      margin-bottom: 6px;
+    }
+
+    ul {
+      li {
+        display: inline-block;
+        position: relative;
+        padding: 0 12px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 50%;
+          left: 100%;
+          width: 1px;
+          height: 15px;
+          margin-left: 2px;
+          background-color: #575757;
+          transform: translateY(-50%);
+          margin-top: 2px;
+        }
+
+        a,
+        span {
+          display: inline-block;
+          color: #575757;
+          font-size: 14.23px;
+        }
+
+        &:nth-child(even) {
+          &::before {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .page-titlee {
+    color: $color-primary;
+    font-size: 162.6px;
+    font-weight: 600;
+    opacity: .1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+
+//////////////////////////////
+/// why choose us
+
+.chooseus-section {
+  position: relative;
+  padding: 80px 0px 45px 0px;
+
+  .section-heading {
+    margin-bottom: 5rem;
+    position: relative;
+    z-index: 9;
+  }
+
+  .pattern-layer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    right: 0px;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-repeat: repeat-x;
+    background: #F5F6F7 !important;
+
+  }
+
+  .content-box {
+    position: relative;
+    max-width: 300px;
+
+    .inner-box {
+      position: relative;
+      width: 100%;
+      padding: 225px 35px 45px 35px;
+
+      .text {
+        position: relative;
+        display: block;
+        background: #fff;
+        padding: 45px 25px 40px 25px;
+        text-align: center;
+        box-shadow: 10px 10px 0px 0px rgba(255, 255, 255, 0.35);
+
+        h2 {
+
+          position: relative;
+          display: inline-block;
+          font-size: 106px;
+          font-weight: 700;
+          width: 170px;
+          height: 170px;
+          line-height: 160px;
+          text-align: center;
+          border-radius: 50%;
+          border: 2px dashed #24485e;
+          margin-bottom: 20px;
+          color: #052369;
+
+        }
+
+        h5 {
+          font-size: 18px;
+          line-height: 24px;
+          font-weight: 600;
+          text-transform: uppercase;
+
+        }
+      }
+    }
+  }
+
+  .chooseus-block-one {
+    position: relative;
+    max-width: 220px;
+    margin: 0 auto;
+
+    .inner-box {
+      position: relative;
+      display: block;
+      text-align: center;
+      margin-bottom: 60px;
+
+      .icon-box {
+        position: relative;
+        display: inline-block;
+        width: 150px;
+        height: 155px;
+        line-height: 155px;
+        text-align: center;
+        // background: #fff;
+        // box-shadow: 0px 10px 30px 10px rgba(0, 0, 0, 0.05);
+        // margin-bottom: 29px;
+        z-index: 1;
+
+        &::before {
+          position: absolute;
+          content: '';
+          background: #20445a;
+          width: 100%;
+          height: 0%;
+          left: 0px;
+          top: 0px;
+          right: 0px;
+          z-index: -1;
+          transition: all 500ms ease;
+        }
+
+        img {
+          min-height: 64px;
+          width: auto;
+        }
+
+        .icon-shape {
+          position: absolute;
+          left: 0px;
+          top: 0px;
+          right: 0px;
+          width: 100%;
+          height: 100%;
+        }
+      }
+
+      h3 {
+        display: block;
+        font-size: 24px;
+        line-height: 30px;
+        font-weight: 600;
+        margin-bottom: 10px;
+      }
+
+      p {
+        position: relative;
+        // font-family: 'Barlow', sans-serif;
+        color: #555555;
+        font-weight: 400;
+        margin: 0px;
+        transition: all 500ms ease;
+        font-size: 1.5rem;
+      }
+    }
+  }
+
+}
+
