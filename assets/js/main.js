@@ -18,10 +18,81 @@ $('.testimonials__slider').slick({
     centerMode: true,
     // variableWidth: true,
     slidesToScroll: 2,
+    // autoplay: true,
+    // autoplaySpeed: 1000,
+    draggable: true,
+    pauseOnFocus: false,
+
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
+});
+
+$('.services-two__carousel').slick({
+    dots: false,
+    infinite: true,
+    speed: 1200,
+    slidesToShow: 3,
+    centerMode: true,
+    // variableWidth: true,
+    slidesToScroll: 2,
     autoplay: true,
     autoplaySpeed: 1000,
     draggable: true,
-    pauseOnFocus: false
+    pauseOnFocus: false,
+    responsive: [
+        {
+            breakpoint: 1024,
+            settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                // infinite: true,
+                // dots: true
+            }
+        },
+        {
+            breakpoint: 900,
+            settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+            }
+        },
+        {
+            breakpoint: 480,
+            settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+            }
+        }
+        // You can unslick at a given breakpoint now by adding:
+        // settings: "unslick"
+        // instead of a settings object
+    ]
 });
 
 
@@ -36,13 +107,15 @@ $('.projects__btn').magnificPopup({
 })
 
 
+var maxWidth = window.matchMedia("(max-width: 992px)");
+
 const galleryContainer = document.querySelector("#gallery-content")
 if (galleryContainer) {
     jQuery("#gallery-content")
         .justifiedGallery({
             captions: false,
             // lastRow: "hide",
-            rowHeight: 400,
+            rowHeight: maxWidth.matches ? 200 : 400,
             margins: 5
         })
 }
@@ -179,41 +252,42 @@ $(document).ready(function () {
 
 /// store the wrapper HTMLElement into a constant
 const imageWrapper = document.querySelector('.img-display-swiper');
-const animatedImage = imageWrapper.querySelectorAll('.AnimatedImage');
-/// then get the width and height properties
-const { offsetWidth, offsetHeight } = imageWrapper;
-/// create a timeout handler for requestAnimationFrame
-let rafTimeout = null, callTimeout = null;
-const CalculateOrigin = (event) => {
-    /// get local cursor offset
-    const { offsetX, offsetY } = event;
-    /// we know than transform-origin centered is equal to 50% 50%
-    /// so we need to handle this position with the delta between
-    /// mouse position and wrapper bounds
+if (imageWrapper) {
+    const animatedImage = imageWrapper.querySelectorAll('.AnimatedImage');
+    /// then get the width and height properties
+    const { offsetWidth, offsetHeight } = imageWrapper;
+    /// create a timeout handler for requestAnimationFrame
+    let rafTimeout = null, callTimeout = null;
+    const CalculateOrigin = (event) => {
+        /// get local cursor offset
+        const { offsetX, offsetY } = event;
+        /// we know than transform-origin centered is equal to 50% 50%
+        /// so we need to handle this position with the delta between
+        /// mouse position and wrapper bounds
 
-    /// calculate deltas
-    const deltaX = (100 / offsetWidth) * offsetX;
-    const deltaY = (100 / offsetHeight) * offsetY;
-    /// apply the style property to the image
-    animatedImage.forEach(el => {
-        el.style.transformOrigin = `${Math.min(100, deltaX)}% ${Math.min(100, deltaY)}%`
-    })
+        /// calculate deltas
+        const deltaX = (100 / offsetWidth) * offsetX;
+        const deltaY = (100 / offsetHeight) * offsetY;
+        /// apply the style property to the image
+        animatedImage.forEach(el => {
+            el.style.transformOrigin = `${Math.min(100, deltaX)}% ${Math.min(100, deltaY)}%`
+        })
 
-    // 
-}
-
-/// add an event listener
-imageWrapper.addEventListener('mousemove', (event) => {
-    if (rafTimeout) {
-        window.cancelAnimationFrame(rafTimeout);
+        // 
     }
-    /// use requestAnimationFrame for event debouncing and animation frame improvements
-    rafTimeout = window.requestAnimationFrame(() => CalculateOrigin(event));
-});
+
+    /// add an event listener
+    imageWrapper.addEventListener('mousemove', (event) => {
+        if (rafTimeout) {
+            window.cancelAnimationFrame(rafTimeout);
+        }
+        /// use requestAnimationFrame for event debouncing and animation frame improvements
+        rafTimeout = window.requestAnimationFrame(() => CalculateOrigin(event));
+    });
 
 
 
-
+}
 
 //////////////////////////////////////////////////
 //////
@@ -246,4 +320,52 @@ var swiper4 = new Swiper(".img-display-swiper", {
 //     const swiperOptions = JSON.parse(swiperelm.dataset.swiperOptions);
 //     let thmSwiperSlider = new Swiper(swiperelm, swiperOptions);
 // });
+// }
+
+// swiper slider
+const swiperElm = document.querySelector(".thm-swiper__slider");
+// swiperElm.forEach(function (swiperelm) {
+
+const swiperOptions = JSON.parse(swiperElm.dataset.swiperOptions);
+console.log(swiperOptions);
+let thmSwiperSlider = new Swiper(swiperElm, swiperOptions);
+// });
+
+
+// if ($(".services-two__carousel").length) {
+//     $(".services-two__carousel").owlCarousel({
+//         // loop: true,
+//         margin: 30,
+//         nav: false,
+//         smartSpeed: 500,
+//         autoHeight: false,
+//         // autoplay: true,
+//         // dots: true,
+//         item: 3,
+//         autoplayTimeout: 10000,
+//         navText: [
+//             '<i class="fa fa-angle-double-left" aria-hidden="true"></i>',
+//             '<i class="fa fa-angle-double-right" aria-hidden="true"></i>'
+//         ],
+//         responsive: {
+//             0: {
+//                 items: 1
+//             },
+//             600: {
+//                 items: 1
+//             },
+//             800: {
+//                 items: 2
+//             },
+//             1000: {
+//                 items: 3
+//             },
+//             1350: {
+//                 items: 3
+//             },
+//             2000:{
+//                 items:4
+//             }
+//         }
+//     });
 // }

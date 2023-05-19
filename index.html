@@ -13,7 +13,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/css/justifiedGallery.css">
-
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.css">
     <link rel="stylesheet" href="assets/dist/style.css">
     <link rel="shortcut icon" href="assets/img/logo.svg" type="image/x-icon">
 
@@ -25,7 +27,7 @@
     <main>
         <!-- <div class="main-bg"> -->
 
-        <nav class="nav" id="nav">
+        <nav class="nav nav--home" id="nav">
             <div class="container">
                 <div class="nav__content">
                     <a href="index.html" class="nav__logo">
@@ -66,14 +68,14 @@
 
 
 
-
+        <!-- 
         <header class="header">
             <div class="container">
                 <div class="row">
                     <div class="col-md-5">
                         <div class="header__left">
                             <div class="section-heading">
-                                <h1 class="section-heading__title">
+                                <h1 class="sec-title__title">
                                     Lorem ipsum dolor sit consectetur amet
                                 </h1>
                             </div>
@@ -85,7 +87,7 @@
                         <div class="header__right">
 
                             <div class="section-heading">
-                                <h1 class="section-heading__description">
+                                <h1 class="sec-title__text">
                                     Eiusm od tempor incididunt ut labore. Consectetur adipiscing elit, sed do.
                                     Consectetur
                                     adipiscing elit, sed do eiusm onsectetur adipiscing elit.
@@ -112,122 +114,269 @@
                 </div>
             </div>
 
-        </header>
+        </header> -->
 
 
-        <img src="assets/img/banner-1.jpg" alt="">
+        <!--Main Slider Start-->
+        <section class="main-slider main-slider-one main-slider-one--two">
+            <div class="swiper-container thm-swiper__slider" data-swiper-options='{"slidesPerView": 1, "loop": true, "effect": "fade", "pagination": {
+            "el": "#main-slider-pagination",
+            "type": "bullets",
+            "clickable": true
+            },
+            "navigation": {
+            "nextEl": "#main-slider__swiper-button-next",
+            "prevEl": "#main-slider__swiper-button-prev"
+            },
+            "autoplay": {
+            "delay": 7000
+            }}'>
 
-        <div class="about section-padding">
+                <div class="swiper-wrapper">
+
+                    <!--Start Single Swiper Slide-->
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(https://alori-html.vercel.app/assets/images/backgrounds/main-slider-v2-1.jpg);">
+                        </div>
+                        <div class="main-slider-one__overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider-one__inner">
+                                        <div class="border-box"></div>
+                                        <p class="main-slider-one__text">A Complete Solution for Your Dooring Vision.
+                                        </p>
+                                        <h2 class="main-slider-one__title">Your Door, Your <br>Lifestyle, Our Passion
+                                        </h2>
+                                        <div class="main-slider-one__btn">
+                                            <a href="#" class="thm-btn btn">Find Product</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Swiper Slide-->
+
+                    <!--Start Single Swiper Slide-->
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(https://alori-html.vercel.app/assets/images/backgrounds/main-slider-v1-2.jpg);">
+                        </div>
+                        <div class="main-slider-one__overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider-one__inner">
+                                        <div class="border-box"></div>
+                                        <p class="main-slider-one__text">A Complete Solution for Your Dooring Vision.
+                                        </p>
+                                        <h2 class="main-slider-one__title">Your Door, Your <br>Lifestyle, Our Passion
+                                        </h2>
+                                        <div class="main-slider-one__btn">
+                                            <a href="#" class="thm-btn btn">Find Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Swiper Slide-->
+
+                    <!--Start Single Swiper Slide-->
+                    <div class="swiper-slide">
+                        <div class="image-layer"
+                            style="background-image: url(https://alori-html.vercel.app/assets/images/backgrounds/main-slider-v1-3.jpg);">
+                        </div>
+                        <div class="main-slider-one__overlay"></div>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-xl-12">
+                                    <div class="main-slider-one__inner">
+                                        <div class="border-box"></div>
+                                        <p class="main-slider-one__text">A Complete Solution for Your Dooring Vision.
+                                        </p>
+                                        <h2 class="main-slider-one__title">Your Door, Your <br>Lifestyle, Our Passion
+                                        </h2>
+                                        <div class="main-slider-one__btn">
+                                            <a href="#" class="thm-btn btn">Find Product</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Swiper Slide-->
+
+
+                </div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-pagination" id="main-slider-pagination"></div>
+                <div class="main-slider__nav">
+                    <div class="swiper-button-prev" id="main-slider__swiper-button-next">
+                        <i class="fa fa-angle-left" aria-hidden="true"></i>
+                    </div>
+                    <div class="swiper-button-next" id="main-slider__swiper-button-prev">
+                        <i class="fa fa-angle-right" aria-hidden="true"></i>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Main Slider End-->
+
+        <!-- <img src="assets/img/banner-1.jpg" alt=""> -->
+
+        <!--Start About One-->
+        <section class="about-one about-one--two">
             <div class="container">
                 <div class="row">
-                    <div class="col-md-6">
-                        <div class="about__left">
-                            <img src="assets/img/about.jpg" alt="" class="about__img about__img--1">
-                            <img src="assets/img/about-2.jpg" alt="" class=" about__img about__img--2">
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="about__right">
+                    <!--Start About One Img Box-->
+                    <div class="col-xl-6">
+                        <div class="about-one__img">
+                            <div class="shape1 zoom-fade"><img
+                                    src="https://alori-html.vercel.app/assets/images/shapes/about-v1-shape1.png"
+                                    alt="" />
+                            </div>
+                            <div class="about-one__img1">
+                                <img src="https://alori-html.vercel.app/assets/images/about/about-v2-img1.jpg" alt="" />
+                            </div>
 
-                            <div class="section-heading">
-                                <h3 class="section-heading__sub-title">
-                                    LOREM IPSUM AMET
-                                </h3>
+                            <div class="about-one__img2">
 
-                                <h1 class="section-heading__title">
-                                    Consectetur adipiscing
-                                    Sed do eiusmod
-                                </h1>
-
-                                <p class="section-heading__description">
-                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                    incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
-                                    exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                                </p>
-
-                                <a href="#" class="btn">View More</a>
-
+                                <img src="https://alori-html.vercel.app/assets/images/about/about-v2-img2.jpg" alt="" />
                             </div>
                         </div>
                     </div>
+                    <!--End About One Img Box-->
+
+
+
+                    <!--Start About One Content-->
+                    <div class="col-xl-6">
+                        <div class="about-one__content">
+                            <div class="sec-title">
+                                <span class="sec-title__tagline">Why Choose Us</span>
+                                <h2 class="sec-title__title">Lorem ipsum dolor sit. <br>Lorem, ipsum.</h2>
+                            </div>
+
+                            <div class="about-two__content-text1">
+                                <p>Alori is a full-service dooring company. Our established
+                                    systems allow us to deliver industry-leading landscape
+                                    solutions to commercial and residential clients. </p>
+                            </div>
+
+                            <div class="about-two__content-text2">
+                                <p>Dictum fusce ut placerat orci nulla. Amet aliquam cenas
+                                    ultricies. Facilisis sed odio morbi quis magnis </p>
+                            </div>
+
+                            <ul class="about-one__content-list">
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-wood-board"></span>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3>Hardwood door Care Center</h3>
+                                    </div>
+                                </li>
+
+                                <li>
+                                    <div class="icon">
+                                        <span class="icon-customer-satisfaction-1"></span>
+                                    </div>
+
+                                    <div class="title">
+                                        <h3>High-Quality doorings At Great Prices</h3>
+                                    </div>
+                                </li>
+                            </ul>
+
+                        </div>
+                    </div>
+                    <!--End About One Content-->
                 </div>
             </div>
-        </div>
+        </section>
+        <!--End About One-->
 
-        <div class="category section-padding">
+
+
+        <!--Start Services Two-->
+        <section class="services-two">
             <div class="container">
-
-                <div class="section-heading">
-                    <h3 class="section-heading__sub-title">
-                        OUR CATEGORIES
-                    </h3>
-
-                    <h1 class="section-heading__title">
-                        Lorem ipsum dolor
-                    </h1>
-
+                <div class="sec-title text-center">
+                    <h2 class="sec-title__title">Our Category</h2>
+                    <p class="sec-title__text">Our design services starts and ends with a best in class experience<br>
+                        strategy that builds brands.</p>
                 </div>
 
-                <div class="category__content">
+                <div class="row">
+                    <div class="col-xl-12">
+                        <div class="services-two__carousel">
 
-                    <div class="row">
-                        <div class="col-md-3">
-                            <div class="category__single">
-                                <img src="assets/img/category.jpg" alt="category">
-                                <div class="category__single-details">
-                                    <h6 class="category__single-title">
-                                        Model Name
-                                    </h6>
-                                    <h6 class="category__single-icon">
-                                        <i class="	fa fa-arrow-right"></i>
-                                    </h6>
+                            <!--Start Single Services Two-->
+                            <div class="services-two__single wow animated fadeInUp" data-wow-delay="0.1s">
+                                <div class="services-two__single-img">
+                                    <img src="https://alori-html.vercel.app/assets/images/services/services-v2-img1.jpg"
+                                        alt="" />
+                                    <div class="icon">
+                                        <span class="icon-carpet"></span>
+                                    </div>
+                                </div>
+
+                                <div class="services-two__single-content text-center">
+                                    <h2><a href="services-single-1.html">Lorem, ipsum.</a></h2>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="category__single">
-                                <img src="assets/img/category.jpg" alt="category">
-                                <div class="category__single-details">
-                                    <h6 class="category__single-title">
-                                        Model Name
-                                    </h6>
-                                    <h6 class="category__single-icon">
-                                        <i class="	fa fa-arrow-right"></i>
-                                    </h6>
+                            <!--End Single Services Two-->
+
+                            <!--Start Single Services Two-->
+                            <div class="services-two__single wow animated fadeInUp" data-wow-delay="0.1s">
+                                <div class="services-two__single-img">
+                                    <img src="https://alori-html.vercel.app/assets/images/services/services-v2-img2.jpg"
+                                        alt="" />
+                                    <div class="icon">
+                                        <span class="icon-kitchen"></span>
+                                    </div>
+                                </div>
+
+                                <div class="services-two__single-content text-center">
+                                    <h2><a href="services-single-1.html">Lorem, ipsum.</a></h2>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="category__single">
-                                <img src="assets/img/category.jpg" alt="category">
-                                <div class="category__single-details">
-                                    <h6 class="category__single-title">
-                                        Model Name
-                                    </h6>
-                                    <h6 class="category__single-icon">
-                                        <i class="	fa fa-arrow-right"></i>
-                                    </h6>
+                            <!--End Single Services Two-->
+
+                            <!--Start Single Services Two-->
+                            <div class="services-two__single wow animated fadeInUp" data-wow-delay="0.1s">
+                                <div class="services-two__single-img">
+                                    <img src="https://alori-html.vercel.app/assets/images/services/services-v2-img3.jpg"
+                                        alt="" />
+                                    <div class="icon">
+                                        <span class="icon-logs"></span>
+                                    </div>
+                                </div>
+
+                                <div class="services-two__single-content text-center">
+                                    <h2><a href="services-single-1.html">Lorem, ipsum.</a></h2>
+
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-md-3">
-                            <div class="category__single">
-                                <img src="assets/img/category.jpg" alt="category">
-                                <div class="category__single-details">
-                                    <h6 class="category__single-title">
-                                        Model Name
-                                    </h6>
-                                    <h6 class="category__single-icon">
-                                        <i class="	fa fa-arrow-right"></i>
-                                    </h6>
-                                </div>
-                            </div>
+                            <!--End Single Services Two-->
+
+
                         </div>
                     </div>
-
                 </div>
             </div>
-        </div>
+        </section>
+        <!--End Services Two-->
+
 
 
         <div class="about section-padding about--2">
@@ -247,12 +396,12 @@
                                     LOREM IPSUM AMET
                                 </h3>
 
-                                <h1 class="section-heading__title">
+                                <h1 class="sec-title__title m-0">
                                     Consectetur adipiscing
                                     Sed do eiusmod
                                 </h1>
 
-                                <p class="section-heading__description">
+                                <p class="sec-title__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -268,7 +417,7 @@
         </div>
 
 
-        <div class="product section-padding">
+        <!-- <div class="product section-padding">
             <div class="container">
 
                 <div class="row">
@@ -387,7 +536,173 @@
                 </div>
 
             </div>
-        </div>
+        </div> -->
+
+
+        <section class="projects-one projects-one--protfolio">
+            <div class="container">
+                <div class="row">
+
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+                    <!--Start Single Projects One-->
+                    <div class="col-xl-3 col-md-6 wow fadeInLeft" data-wow-delay="0ms" data-wow-duration="1500ms">
+                        <div class="projects-one__single">
+                            <div class="projects-one__single-img">
+                                <img src="assets/img/about.jpg" alt="" />
+                            </div>
+
+                            <div class="projects-one__single-content">
+                                <!-- <span>Hardwood</span> -->
+                                <h2><a href="products-single.html">Hardword Flooring</a></h2>
+                                <!-- <p>Volutpat lacus laoreet curabitur. Cursus turpis in eu mi bibendum </p> -->
+
+                                <!-- <div class="btn-box">
+                                    <a href="products-single.html"><span class="icon-next"></span></a>
+                                </div> -->
+                            </div>
+                        </div>
+                    </div>
+                    <!--End Single Projects One-->
+
+
+
+                </div>
+            </div>
+
+        </section>
+        <!--End Projects One-->
 
 
         <div class="about section-padding about--3">
@@ -402,11 +717,11 @@
                                     LOREM IPSUM AMET
                                 </h3>
 
-                                <h1 class="section-heading__title">
+                                <h1 class="sec-title__title">
                                     Explore our service
                                 </h1>
 
-                                <p class="section-heading__description">
+                                <p class="sec-title__text">
                                     Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
                                     incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
                                     exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
@@ -416,19 +731,19 @@
 
                                     <div class="row">
 
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-lg-6">
                                             <div class="services__single">
                                                 <div class="row">
 
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="services__single-img-box">
 
-                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-01.png" alt="services"
-                                                                class="services__single-img">
+                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-01.png"
+                                                                alt="services" class="services__single-img">
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-8">
+                                                    <div class="col-8">
                                                         <div class="category__single-details services__details">
                                                             <h6 class="category__single-title">
                                                                 Window Services
@@ -449,19 +764,19 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-lg-6">
                                             <div class="services__single">
                                                 <div class="row">
 
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="services__single-img-box">
 
-                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-03.png" alt="services"
-                                                                class="services__single-img">
+                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-03.png"
+                                                                alt="services" class="services__single-img">
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-8">
+                                                    <div class="col-8">
                                                         <div class="category__single-details services__details">
                                                             <h6 class="category__single-title">
                                                                 Window Installation
@@ -482,19 +797,19 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-lg-6">
                                             <div class="services__single">
                                                 <div class="row">
 
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="services__single-img-box">
 
-                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-04.png" alt="services"
-                                                                class="services__single-img">
+                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-04.png"
+                                                                alt="services" class="services__single-img">
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-8">
+                                                    <div class="col-8">
                                                         <div class="category__single-details services__details">
                                                             <h6 class="category__single-title">
                                                                 Door Services
@@ -515,19 +830,19 @@
 
                                             </div>
                                         </div>
-                                        <div class="col-md-6">
+                                        <div class="col-md-12 col-lg-6">
                                             <div class="services__single">
                                                 <div class="row">
 
-                                                    <div class="col-md-4">
+                                                    <div class="col-4">
                                                         <div class="services__single-img-box">
 
-                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-02.png" alt="services"
-                                                                class="services__single-img">
+                                                            <img src="https://templatekit.tokomoo.com/doorkit/wp-content/uploads/sites/53/2021/12/icon-02.png"
+                                                                alt="services" class="services__single-img">
                                                         </div>
                                                     </div>
 
-                                                    <div class="col-md-8">
+                                                    <div class="col-8">
                                                         <div class="category__single-details services__details">
                                                             <h6 class="category__single-title">
                                                                 Door Installation
@@ -580,7 +895,7 @@
 
                     </h3>
 
-                    <h1 class="section-heading__title">
+                    <h1 class="sec-title__title">
                         Our Gallery
                     </h1>
 
@@ -642,8 +957,7 @@
 
 
 
-        <section class="chooseus-section">
-            <div class="pattern-layer"></div>
+        <section class="chooseus-section bg-f6f5ed">
 
             <div class="container">
 
@@ -651,12 +965,12 @@
                     <h3 class="section-heading__sub-title">
                         PEOPLE SAY ABOUT US
                     </h3>
-                    <h1 class="section-heading__title">
+                    <h1 class="sec-title__title">
                         Why Choose Us
                     </h1>
                 </div>
                 <div class="row clearfix">
-                    <div class="col-lg-4 col-md-12 col-sm-12 content-column">
+                    <div class="col-lg-4 col-md-4 col-sm-12 content-column">
                         <div class="content_block_2">
                             <div class="content-box">
                                 <div class="inner-box"
@@ -669,7 +983,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-8 col-md-12 col-sm-12 inner-column">
+                    <div class="col-lg-8 col-md-8 col-sm-12 inner-column">
                         <div class="inner-content">
                             <div class="row clearfix">
                                 <div class="col-lg-4 col-md-6 col-sm-12 chooseus-block">
@@ -779,7 +1093,7 @@
 
                     </h3>
 
-                    <h1 class="section-heading__title">
+                    <h1 class="sec-title__title">
                         Clients' Testimonials
 
                     </h1>
@@ -926,14 +1240,14 @@
                         Building The Future
                     </h3>
 
-                    <h1 class="section-heading__title">
+                    <h1 class="sec-title__title">
                         Latest From the <span> Blog </span>
                     </h1>
                 </div>
 
                 <div class="blog__content">
                     <div class="row blog__row">
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-lg-4">
                             <div class="blog__single-items">
                                 <img src="assets/img/blog-3.jpg" alt="blog">
                                 <div class="d-flex justify-content-between">
@@ -956,7 +1270,7 @@
                                 <a href="#" class="blog__link">Read More</a>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-lg-4">
                             <div class="blog__single-items">
                                 <img src="assets/img/blog-1.jpg" alt="blog">
                                 <div class="d-flex justify-content-between">
@@ -979,7 +1293,7 @@
                                 <a href="#" class="blog__link">Read More</a>
                             </div>
                         </div>
-                        <div class="col-md-4">
+                        <div class="col-md-6 col-lg-4">
                             <div class="blog__single-items">
                                 <img src="assets/img/blog-2.jpg" alt="blog">
                                 <div class="d-flex justify-content-between">
@@ -1119,33 +1433,11 @@
                         Copyright @ 2023 Fenestro Engineers . inc. All rights reserved
                     </h2>
 
-                    <ul class="social-links">
-                        <li>
-                            <a href="#" class="social-links__item">
-                                <i class="fa fa-500px"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-links__item">
-                                <i class="fa fa-behance"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-links__item">
-                                <i class="fa-brands fa-dribbble"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-links__item">
-                                <i class="fa fa-flickr"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#" class="social-links__item">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                    </ul>
+                    <h2 class="footer__copyright-text">
+                        Powered by Jaseem v
+                    </h2>
+
+
                 </div>
             </div>
 
@@ -1165,8 +1457,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/justifiedGallery@3.8.1/dist/js/jquery.justifiedGallery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
 
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.3.2/swiper-bundle.min.js"></script>
     <script src="assets/dist/main.js"></script>
 
 </body>
