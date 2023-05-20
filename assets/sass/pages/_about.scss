@@ -2170,7 +2170,16 @@
         }
     }
 
-    .booking__form{
+    .booking__form {
         margin-top: 0;
     }
+}
+
+
+.contact-page-google-map__one {
+    position: relative;
+    display: block;
+    border: none;
+    height: 600px;
+    width: 100%;
 }
