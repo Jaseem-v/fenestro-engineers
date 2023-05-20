@@ -108,6 +108,7 @@ $('.projects__btn').magnificPopup({
 
 
 var maxWidth = window.matchMedia("(max-width: 992px)");
+var maxSmallWidth = window.matchMedia("(max-width: 600px)");
 
 const galleryContainer = document.querySelector("#gallery-content")
 if (galleryContainer) {
@@ -115,7 +116,7 @@ if (galleryContainer) {
         .justifiedGallery({
             captions: false,
             // lastRow: "hide",
-            rowHeight: maxWidth.matches ? 200 : 400,
+            rowHeight: maxSmallWidth ? 400 : maxWidth.matches ? 200 : 400,
             margins: 5
         })
 }
@@ -185,6 +186,7 @@ $('.clients__slider').slick({
 // Mobile menu
 const openBtn = document.querySelector(".open-btn")
 const nav_list = document.querySelector(".nav__list")
+const nav = document.querySelector(".nav")
 const body = document.querySelector("body")
 // const overlay = document.querySelector(".overlay")
 // const navContact = document.querySelector(".nav-contact")
@@ -193,6 +195,7 @@ function mobileMenu() {
     openBtn.classList.toggle("active");
     nav_list.classList.toggle("active")
     body.classList.toggle("no-scrolling")
+    nav.classList.toggle("active")
     // navContact.classList.toggle("hidden")
 }
 
