@@ -485,6 +485,20 @@
         gap: 2.5rem;
         z-index: 10;
     }
+
+    &__feedback {
+        background: #EFF2EF;
+        &-content {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        &-title {
+            font-size: 2.5rem !important;
+            margin-bottom: 0 !important;
+        }
+    }
 }
 
 

@@ -372,3 +372,20 @@ let thmSwiperSlider = new Swiper(swiperElm, swiperOptions);
 //         }
 //     });
 // }
+
+
+const testiPopupBtn = document.querySelector(".testimonial__popup .contact__form h6")
+const testiPopup = document.querySelector(".testimonial__popup")
+const feedBtn = document.querySelector(".testimonial__feedback-btn")
+
+if (testiPopup) {
+    feedBtn.addEventListener("click", () => {
+        testiPopup.classList.toggle("active")
+        body.classList.toggle("no-scrolling")
+    })
+
+    testiPopupBtn.addEventListener("click", () => {
+        testiPopup.classList.remove("active")
+        body.classList.toggle("no-scrolling")
+    })
+}
